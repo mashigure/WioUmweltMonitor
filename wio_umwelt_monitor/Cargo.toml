@@ -1,0 +1,16 @@
+[package]
+name = "wio_umwelt_monitor"
+version = "0.1.0"
+authors = ["mashigure <mashigure@nicotech.jp>"]
+edition = "2018"
+
+[dependencies]
+scd30 = { path = "scd30" }
+bm1383aglv = { path = "bm1383aglv" }
+wio_terminal = "0.3"
+panic-halt = "0.2"
+cortex-m = "0.6.4"
+cortex-m-rt = "0.6.13"
+nb = "0.1"
+embedded-graphics = "0.6.2"
+heapless = "0.5.6"

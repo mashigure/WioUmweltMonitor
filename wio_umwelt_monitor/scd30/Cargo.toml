@@ -1,0 +1,11 @@
+[package]
+name = "scd30"
+version = "0.1.0"
+authors = ["mashigure <mashigure@nicotech.jp>"]
+edition = "2018"
+
+[dependencies]
+wio_terminal = "0.3"
+panic-halt = "0.2"
+cortex-m = "0.6.4"
+cortex-m-rt = "0.6.13"
