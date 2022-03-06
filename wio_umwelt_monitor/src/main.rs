@@ -234,7 +234,7 @@ pub fn get_sensor_value( i2c: &mut I2CMaster3<Sercom3Pad0<Pa17<PfD>>,
     if let Ok(is_available) = sensor.is_available(i2c) {
         if is_available {
             if let Ok((get_co2, get_tmp, get_hum)) = sensor.get_value(i2c) {
-                if get_co2 < 300.0 {
+                if get_co2 < 100.0 {
                     // なぜかまともなデータが取れないときは無視
                 }
                 else {
